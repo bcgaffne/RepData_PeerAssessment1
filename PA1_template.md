@@ -56,12 +56,8 @@ Step 2: What is the mean total number of steps taken per day?
 ![](PA1_template_files/figure-markdown_github/Histogram%20plot-1.png)
 
 ``` r
-        ggsave("plot1.png")
+        #ggsave("plot1.png")
 ```
-
-    ## Saving 7 x 5 in image
-
-    ## Warning: Removed 8 rows containing non-finite values (stat_bin).
 
 3.Calculate and report the mean and median of the total number of steps taken each day
 -Mean is calculated as follows with NA days removed:
@@ -96,10 +92,8 @@ Step3: What is the average daily activity pattern?
 ![](PA1_template_files/figure-markdown_github/line%20chart-1.png)
 
 ``` r
-        ggsave("plot2.png")
+        #ggsave("plot2.png")
 ```
-
-    ## Saving 7 x 5 in image
 
 2.Which 5 minute interval on average contains the maximum number of steps?
 -using subsetting and "which" function:
@@ -181,10 +175,8 @@ Step4: Inputting missing values...
 ![](PA1_template_files/figure-markdown_github/Histogram_clean-1.png)
 
 ``` r
-        ggsave("plot3.png")
+        #ggsave("plot3.png")
 ```
-
-    ## Saving 7 x 5 in image
 
 -Mean calculated as follows:
 
@@ -227,7 +219,5 @@ Step5: Are there differences in activity patterns between weekdays and weekends?
 ![](PA1_template_files/figure-markdown_github/weekday-1.png)
 
 ``` r
-        ggsave("plot4.png")
+        #ggsave("plot4.png")
 ```
-
-    ## Saving 7 x 5 in image
