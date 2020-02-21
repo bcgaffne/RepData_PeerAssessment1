@@ -30,6 +30,7 @@ The following code loads the pre-downloaded dataset into R into a object called 
 ```{r stepcount}
         group1<-dataset%>%group_by(date)%>%summarize(totalsteps=sum(steps))
         head(group1)
+        
 ```
 
 2.Make a Histogram of the total number of steps taken each day.  
@@ -37,6 +38,7 @@ The following code loads the pre-downloaded dataset into R into a object called 
 ```{r Histogram plot}
         plot1<-ggplot(group1,aes(totalsteps))+geom_histogram(binwidth=1000)
         print(plot1)
+        ggsave("plot1.png")
 ```
 
 3.Calculate and report the mean and median of the total number of steps taken each day  
@@ -58,6 +60,7 @@ The following code loads the pre-downloaded dataset into R into a object called 
 
         plot2<-ggplot(group2,aes(interval,averagesteps))+geom_line()
         print(plot2)
+        ggsave("plot2.png")
 ```  
 
 2.Which 5 minute interval on average contains the maximum number of steps?  
@@ -105,6 +108,7 @@ The following code loads the pre-downloaded dataset into R into a object called 
 
         plot3<-ggplot(group5,aes(totalsteps))+geom_histogram(binwidth=1000)
         print(plot3)
+        ggsave("plot3.png")
 
 ```
        
@@ -137,6 +141,7 @@ As the results show, inputting the interval average into the missing observation
         plot4<-ggplot(group6,aes(interval,Avesteps))+geom_line()+facet_wrap(~dayclass,ncol=1)+labs(y="Ave                 Steps",x="Time Interval")
         
         print(plot4)
+        ggsave("plot4.png")
 
 ```
         
