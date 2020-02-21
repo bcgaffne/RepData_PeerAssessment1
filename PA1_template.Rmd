@@ -1,8 +1,8 @@
 ---
 title: "Reproducible Research- Assignment 1"
 author: "ME"
-date: "February 15, 2020"
-output: html_document
+date: "February 20, 2020"
+output: github_document
 ---
 
 ```{r setup, include=FALSE}
