@@ -134,7 +134,7 @@ As the results show, inputting the interval average into the missing observation
         dataset_clean$dayclass<-as.factor(sapply(dataset_clean$weekdays,day_class))
         group6<-dataset_clean%>%group_by(dayclass,interval)%>%summarise(Avesteps=mean(steps))
         
-        plot4<-ggplot(group6,aes(interval,Avesteps))+geom_line()+facet_wrap(~dayclass,ncol=1)+labs(y="Average                 Steps",x="Time Interval")
+        plot4<-ggplot(group6,aes(interval,Avesteps))+geom_line()+facet_wrap(~dayclass,ncol=1)+labs(y="Ave                 Steps",x="Time Interval")
         
         print(plot4)
 
